@@ -23,6 +23,7 @@ $(call inherit-product, device/xiaomi/tissot/device.mk)
 
 # Inherit some common Nusantara stuff.
 $(call inherit-product, vendor/nad/config/common_full_phone.mk)
+$(call inherit-product-if-exists, packages/apps/NusantaraParts/nadproject.mk)
 NAD_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true

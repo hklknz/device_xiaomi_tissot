@@ -46,5 +46,11 @@
     "repository":"Gabuters-Dev/gabuters-clang",
     "target_path":"prebuilts/clang/host/linux-x86/gabuters-clang",
     "branch":"master"
+ },
+ {
+   "remote":"priv",
+   "repository":"android_packages_apps_NusantaraParts",
+   "target_path":"packages/apps/NusantaraParts", 
+   "branch":"11"
   }
 ]
