@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xdroid_tissot.mk
+    $(LOCAL_DIR)/aosp_tissot.mk
+
+COMMON_LUNCH_CHOICES := \
+    aosp_tissot-userdebug \
+    aosp_tissot-user \
+    aosp_tissot-eng

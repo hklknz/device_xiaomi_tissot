@@ -18,8 +18,7 @@ $(call inherit-product, vendor/xiaomi/tissot/tissot-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-xdroid
+    $(LOCAL_PATH)/overlay
 
 # Indicate the first api level the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 25
