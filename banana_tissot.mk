@@ -21,12 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from tissot device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common xdroid stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common banana stuff.
+$(call inherit-product, vendor/banana/config/common.mk)
+BANANA_MAINTAINER := ハルキンズ
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := aosp_tissot
+PRODUCT_NAME := banana_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
@@ -40,10 +43,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys"
-
-# Stuffs
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_SUPPORTS_QUICK_TAP := true
